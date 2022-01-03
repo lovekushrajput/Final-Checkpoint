@@ -20,8 +20,6 @@
          padding-top: 1rem;
          right:  0;
          z-index: 7;
-        //  background-color: gray;
-        //  width: 100%;
      }
 
      .nav{
@@ -38,9 +36,11 @@
 		z-index: 6;
         li{
             margin: 1.5rem 0;
+         border: transparent;
             a{
-                color: rgb(18, 123, 150);
+                color: rgb(141, 145, 145);
             }
+
         }
 	}
     
@@ -56,6 +56,8 @@
 	#toggle:checked~.nav{
 		display: inline-block;
 	}
+
+
     //flex
     .sm-column{
         flex-direction: column;
@@ -71,12 +73,6 @@
 
     .hero{
         figure{
-            width: 100%;
-        }
-    }
-
-    .all-work{
-        img{
             width: 100%;
         }
     }

@@ -19,28 +19,21 @@ header{
     display: none
     ;
 }
-// .bar{
-//   margin-right: 22rem;
-// }
+
 
 
 .nav{
     li{
         margin-left: 2rem;
         padding: 0.6rem;
-        &:hover{
-            border: 1px solid  rgb(180, 6, 6);
-            margin-left: 2rem;
-            padding: 0.6rem;
-            border-radius: 0.5rem;
-        }
-       
+        border: 0.5px solid red;
+        border-radius: 0.6rem;
     }
-
     .active{
         border-radius: 0.5rem;
         position: relative;
         overflow: hidden;
+        border: transparent;
     }
 
     .active span:nth-child(1){
@@ -142,16 +135,6 @@ h1{
 
 }
 
-// .media-screen{
-//     font-family:  $rajdhani-family;
-//     text-transform:  uppercase;
-//     font-size: 1.5rem;
-//     padding-top: 6rem;
-// }
-
-// .media-screen{
-//     display: none;
-// }
 
 h2{
     font-family: 'Poiret One', cursive;
@@ -194,13 +177,10 @@ h3{
     height: 2rem;
     color: black;
     background-color: white;
-    // border: 1px solid red;
     margin-top: 1rem;
     margin-right: 1rem;
-    // gap: 1.5rem;
     font-size: 1.2rem;
     border-radius: 50%;
-    
 }
 
   
@@ -312,32 +292,16 @@ h3{
    overflow: auto;
    padding: 4rem 1.5rem;
    gap: 2rem;
-
- 
-  
-   img{
+         img{
        width: 38%;
        border-radius: 0.6rem;
         &:hover{
         box-shadow: 1px 0px 8px 3px rgba($color: red, $alpha: 1.0);
-    }
-   }
-    }
-    // .image-overlay{
-    //     position: absolute;
-    //     background-color: rgba($color: #000000, $alpha: 0.5);
-    //     height: 100%;
-    //     width: 100%;
-    //     a{
-    //         color: white;
-    //     }
-    //     top: 0;
-    //     bottom: 0;
-    //     left: 0;
-    //     // right: 0;
+         }
+       }
 
-
-    // }
+    }
+  
     ::-webkit-scrollbar {
         width: 0;
         background: transparent;
