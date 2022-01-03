@@ -315,13 +315,6 @@ header {
   padding-top: 6rem;
 }
 
-.hero h1 span {
-  -webkit-animation: waving-hand 2s linear infinite;
-          animation: waving-hand 2s linear infinite;
-  -webkit-transform-origin: 70% 70%;
-          transform-origin: 70% 70%;
-}
-
 .hero h2 {
   font-family: 'Poiret One', cursive;
   font-size: 3.5rem;
@@ -383,76 +376,6 @@ header {
           transform: rotate(360deg) scale(1.2);
   background-color: black;
   color: white;
-}
-
-@-webkit-keyframes waving-hand {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  10% {
-    -webkit-transform: rotate(14deg);
-            transform: rotate(14deg);
-  }
-  20% {
-    -webkit-transform: rotate(-8deg);
-            transform: rotate(-8deg);
-  }
-  30% {
-    -webkit-transform: rotate(14deg);
-            transform: rotate(14deg);
-  }
-  4% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
-  }
-  50% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  60% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes waving-hand {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  10% {
-    -webkit-transform: rotate(14deg);
-            transform: rotate(14deg);
-  }
-  20% {
-    -webkit-transform: rotate(-8deg);
-            transform: rotate(-8deg);
-  }
-  30% {
-    -webkit-transform: rotate(14deg);
-            transform: rotate(14deg);
-  }
-  4% {
-    -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
-  }
-  50% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  60% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
 }
 
 @-webkit-keyframes text {
@@ -691,10 +614,11 @@ footer {
     position: fixed;
     display: block;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding-top: 1rem;
     right: 0;
     z-index: 7;
+    padding-right: 0.7rem;
   }
   .nav {
     position: fixed;
@@ -722,6 +646,7 @@ footer {
     padding-top: 0.5rem;
     z-index: 20;
     left: 0;
+    padding-left: 0.5rem;
   }
   #toggle:checked ~ .nav {
     display: inline-block;

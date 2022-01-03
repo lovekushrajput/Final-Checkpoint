@@ -132,12 +132,6 @@ h1{
     text-transform:  uppercase;
     font-size: 1.5rem;
     padding-top: 6rem;
-  
-    span{
-    animation: waving-hand 2s linear infinite;
-    transform-origin: 70% 70%;
-    }
-
 }
 
 
@@ -192,37 +186,9 @@ h3{
         background-color: black;
         color: white;
     }
+}  
 }
 
-  
-}
-@keyframes waving-hand{
-    0%{
-        transform: rotate(0deg);
-    }
-    10%{
-        transform: rotate(14deg);
-    }
-    20%{
-        transform: rotate(-8deg);
-    }
-    30%{
-        transform: rotate(14deg);
-    }
-    4%{
-        transform: rotate(-4.0deg);
-    }
-    50%{
-        transform: rotate(10deg);
-    }
-    60%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-
-}
 
 @keyframes text {
     0%{
@@ -398,7 +364,6 @@ padding-top: 2rem;
     }
 }
 //footer
-
 footer{
     font-family: $font-family;
     padding: 1rem;
