@@ -134,14 +134,20 @@ header {
 .nav li {
   margin-left: 2rem;
   padding: 0.6rem;
-  border: 0.5px solid red;
   border-radius: 0.6rem;
+}
+
+.nav li:hover {
+  border: 0.6px solid red;
 }
 
 .nav .active {
   border-radius: 0.5rem;
   position: relative;
   overflow: hidden;
+}
+
+.nav .active:hover {
   border: transparent;
 }
 
@@ -368,6 +374,15 @@ header {
   margin-right: 1rem;
   font-size: 1.2rem;
   border-radius: 50%;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.hero .social-icon:hover {
+  -webkit-transform: rotate(360deg) scale(1.2);
+          transform: rotate(360deg) scale(1.2);
+  background-color: black;
+  color: white;
 }
 
 @-webkit-keyframes waving-hand {
@@ -544,11 +559,16 @@ header {
 .projects .all-work img {
   width: 38%;
   border-radius: 0.6rem;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .projects .all-work img:hover {
   -webkit-box-shadow: 1px 0px 8px 3px red;
           box-shadow: 1px 0px 8px 3px red;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
 }
 
 .projects ::-webkit-scrollbar {
@@ -602,7 +622,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 5rem 0;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 #contact .icon {
@@ -612,11 +632,15 @@ header {
   height: 12rem;
   padding: 2rem 1rem;
   display: inline-block;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 
 #contact .icon:hover {
   -webkit-box-shadow: 0px 0px 8px 1px rgba(192, 57, 43, 0.7);
           box-shadow: 0px 0px 8px 1px rgba(192, 57, 43, 0.7);
+  -webkit-transform: rotate(360deg) scale(1.1);
+          transform: rotate(360deg) scale(1.1);
 }
 
 #contact .icon a {
@@ -715,6 +739,9 @@ footer {
     display: none;
   }
   .hero figure {
+    width: 100%;
+  }
+  .projects .all-work img {
     width: 100%;
   }
 }
