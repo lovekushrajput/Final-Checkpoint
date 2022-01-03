@@ -509,6 +509,15 @@ header {
   color: #48bb78;
 }
 
+.brand {
+  font-size: 1.5rem;
+}
+
+.brand strong {
+  font-size: 3rem;
+  font-family: "Tangerine", cursive;
+}
+
 .projects {
   padding-top: 2rem;
   padding-bottom: 2rem;
