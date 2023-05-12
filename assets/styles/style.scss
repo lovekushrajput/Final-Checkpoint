@@ -1,0 +1,89 @@
+@import"vars";
+@import"reset";
+@import"general";
+@import"home";
+
+//media screen
+@media screen and (max-width:768px) {
+    html{
+        font-size: 14px;
+    }
+    //Navbar
+    .brand, .nav{
+        display: none;
+    }
+     .bar{
+         position: fixed;
+         display: block;
+         color: white;
+         font-size: 1.7rem;
+         padding-top: 1rem;
+         right:  0;
+         z-index: 7;
+         padding-right: 0.7rem;
+     }
+
+     .nav{
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 70%;
+		height: 100vh;
+		background-color: rgb(48,48,48,);
+		padding-top: 5rem;
+        padding-left: 1rem;
+		z-index: 6;
+        li{
+            margin: 1.5rem 0;
+         border: transparent;
+            a{
+                color: rgb(141, 145, 145);
+            }
+
+        }
+	}
+    
+    .main-brand{
+        position: fixed;
+        display: inline-block; 
+       padding-top: 0.5rem;
+        z-index: 20;
+        left: 0;
+        padding-left: 0.5rem;
+    }
+
+    
+	#toggle:checked~.nav{
+		display: inline-block;
+	}
+
+
+    //flex
+    .sm-column{
+        flex-direction: column;
+    }
+    .sm-full-width{
+        width: 100%;
+    }
+
+    //
+    .top-button{
+        display: none;
+    }
+
+    .hero{
+        figure{
+            width: 100%;
+        }
+    }
+
+    .projects{
+        .all-work{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
